@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<div class="home">
+  
+  {{ content }}
+  
+  <header class="app-header"></header>
+  <ul class="app-list">
+    {% assign sortedapps = site.apps | reverse %}
+    {% for app in sortedapps %}
+      <li>
+        <div class="footer-col-wrapper">
+            <div class="app-col app-col-1">
+                <img src={{app.mockUrl}}>
+            </div>
+            <div class="app-col app-col-2">
+                <span class="app-title">{{ app.title }}</span>
+                <span class="app-excerpt">{{ app.excerpt }}</span>
+            </div>
+        </div>
+
+        <blockquote>{{ app.quote0 | escape }}</blockquote>
+        <blockquote>{{ app.quote1 | escape }}</blockquote>
+
+        <div class="footer-col-wrapper">
+            <div class="app-col app-fcol">
+                <img src={{app.feature0Url}}>
+                <span class="app-feature-desc">{{ app.feature0Desc }}</span>
+            </div>
+            <div class="app-col app-fcol">
+                <img src={{app.feature1Url}}>
+                <span class="app-feature-desc">{{ app.feature1Desc }}</span>
+            </div>
+            <div class="app-col app-fcol">
+                <img src={{app.feature2Url}}>
+                <span class="app-feature-desc">{{ app.feature2Desc }}</span>
+            </div>
+        </div>
+
+        <a class="post-link" href={{ app.featureLink0 }}>{{ app.featureLink0Desc }}</a>
+        <a class="post-link" href={{ app.featureLink1 }}>{{ app.featureLink1Desc }}</a>
+
+        {% if app.appStoreLink %}
+            <a href={{ app.appStoreLink }}>
+            <img src={{app.appStoreImage}}>
+            </a>
+        {% endif %}
+
+        <header class="app-footer"></header>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
+</div>
