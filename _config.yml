@@ -16,6 +16,8 @@
 title: gaurav
 author: gaurav dixit
 email: gaurav.dixitv@gmail.com
+email_secondary: dixitg@oregonstate.edu
+phone: (425) 647-3679
 description: >- # this means to ignore newlines until "baseurl:"
   something witty goes here.
 baseurl: "" # the subpath of your site, e.g. /blog

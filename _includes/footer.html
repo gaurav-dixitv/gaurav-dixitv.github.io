@@ -15,6 +15,12 @@
             {% if site.email %}
             <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {% endif %}
+            {% if site.email_secondary %}
+            <li><a href="mailto:{{ site.email_secondary }}">{{ site.email_secondary }}</a></li>
+            {% endif %}
+            {% if site.phone %}
+            <li>{{ site.phone }}</a></li>
+            {% endif %}
         </ul>
       </div>
 

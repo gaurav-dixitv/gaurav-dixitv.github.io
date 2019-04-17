@@ -1,7 +1,7 @@
 ---
 title:  "BusyBee"
 excerpt: "
-BusyBee is a headless service(daemon) that helps you manage your calls and acts as an answering machine for those busy hours."
+BusyBee is a headless service (daemon) that helps you manage your calls and acts as an answering machine for those busy hours."
 date: 2016-5-10
 
 mockUrl: "/assets/apps/busyBee/mock.png"

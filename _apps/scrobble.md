@@ -1,8 +1,8 @@
 ---
 title:  "ScroBBle"
 excerpt: "
-scroBBle is a last.fm scroBBler that keeps track of your music and builds recommendations based on last.fm's data and Collaborative Filtering.</br>
-Reinforcement learning is used to evaluate a user's acceptance of a recommendation - This in turn helps the algorithm adapt to a user's taste."
+scroBBle is a last.fm scroBBler that keeps track of your music and builds recommendations based on last.fm's data and collaborative filtering.</br>
+Reinforcement learning is used to evaluate a user's acceptance of a recommendation -- scroBBle adapts to a user's taste."
 date: 2015-12-21
 
 mockUrl: "/assets/apps/scrobble/mock.png"
@@ -13,7 +13,7 @@ quote1: " “The app is perfect. Scrobbles offline, provides info about artists,
 
 feature0Url: "/assets/apps/scrobble/f0.png"
 feature0Desc: "scroBBle uses last.fm's data to retrieve your music history and extracts patterns.</br></br>
-Using collaborative filtering and clustering (packed in with some unsupervised and reinforcement learning), scroBBle builds recommendations for you - artists, tracks and albums that you'd probably love. The recommendations are roughly based on your current taste and have proved to work great for most users!"
+Using collaborative filtering and clustering, scroBBle builds recommendations for you - artists, tracks and albums that you'd probably love. The recommendations are roughly based on your current taste and have proved to work great for most users!"
 
 feature1Url: "/assets/apps/scrobble/f1.png"
 feature1Desc: "
@@ -23,7 +23,7 @@ When running as a headless service, scroBBle will periodically keep you posted o
 
 feature2Url: "/assets/apps/scrobble/f2.png"
 feature2Desc: "scroBBle has an intuitive UI.
-scroBBle lets you dig through your music and find out more about artists, recent/loved tracks, charts, events around you!"
+It lets you dig through your music and find out more about artists, recent/loved tracks, charts, events around you!"
 
 
 featureLink0: "https://blackberries.ru/2015/04/12/scrobble-nativnyj-skrobbler-last-fm-dlya-blackberry-10/"
