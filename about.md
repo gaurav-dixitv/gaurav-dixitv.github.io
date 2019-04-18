@@ -38,4 +38,4 @@ I worked for BMC Software as a project intern.
 2. Because BMC stored network logs, we had tons of data. Using the Log Event tool, we labeled(security levels) the data. A Neural Network was then trained on this data and could predict log severity in real time. I wrote a RNN (LSTM), which was trained on associated sequences from the archived logs. By continuously evaluating live logs, the RNN could predict and warn about potential failures ahead of time.
 
 
-[Get a compressed version]({{ "/assets/read/GauravDixit.pdf" | absolute_url }}) of me.
+[Get a compressed version]({{ "/assets/read/resume_gaurav_dixit.pdf" | absolute_url }}) of me.
