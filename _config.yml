@@ -13,13 +13,15 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: gaurav
+title: gaurav dixit
 author: gaurav dixit
 email: gaurav.dixitv@gmail.com
 email_secondary: dixitg@oregonstate.edu
-phone: (425) 647-3679
-description: >- # this means to ignore newlines until "baseurl:"
-  something witty goes here.
+
+phone: #(425) 647-3679
+#description: >- # this means to ignore newlines until "baseurl:"
+#  something witty goes here.
+description: ""
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
@@ -32,9 +34,16 @@ theme: minima
 plugins:
   - jekyll-feed
 
+header_pages: 
+  - cv.md
+  - experience.md
+  - archive.md
+
 collections:
  apps:
-  foo: bar
+ papers:
+ work:
+#  foo: bar
   
 
 # Exclude from processing.

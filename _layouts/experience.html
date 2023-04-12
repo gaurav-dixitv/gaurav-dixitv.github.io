@@ -1,0 +1,118 @@
+---
+layout: default
+---
+
+<div class="home">
+  
+
+
+
+  {{ content }}
+
+  <p class="home-title">experience</p>
+  </br>
+
+  <ul class="paper-list">
+      <li>
+        <!--<a class="paper-link" href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a>-->
+        <span class="work-name">Collaborative Robotics and Intelligent Systems (CoRIS) Institute</span>
+        </br>
+        <span class="work-title">Graduate Research Assistant</span>
+        <span class="work-dates">august 2018 - present</span>
+        </br>
+        <span class="work-desc">
+        My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris.
+        My work primarily looks at doing this and that at coris.
+        </span>
+      </li>
+    </br>
+      <li>
+        <!--<a class="paper-link" href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a>-->
+        <span class="work-name">Channel 37</span>
+        </br>
+        <span class="work-title">AI Research Intern</span>
+        <span class="work-dates">august 2018 - present</span>
+        </br>
+        <span class="work-desc">
+        My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris.
+        My work primarily looks at doing this and that at coris.
+        </span>
+      </li>
+    </br>
+      <li>
+        <!--<a class="paper-link" href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a>-->
+        <span class="paper-title">RedLynx</span>
+        </br>
+        <span class="paper-authors">AI Research Intern</span>
+        <span class="paper-venue">august 2018 - present</span>
+        </br>
+        <span class="work-desc">
+        My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris.
+        My work primarily looks at doing this and that at coris.
+        </span>
+      </li>
+    </br>
+      <li>
+        <!--<a class="paper-link" href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a>-->
+        <span class="paper-title">Ubisoft</span>
+        </br>
+        <span class="paper-authors">AI Research Intern</span>
+        <span class="paper-venue">august 2018 - present</span>
+        </br>
+        <span class="work-desc">
+        My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris.
+        My work primarily looks at doing this and that at coris.
+        </span>
+      </li>
+      <li>
+        <!--<a class="paper-link" href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a>-->
+        <span class="paper-title">BMC Software</span>
+        </br>
+        <span class="paper-authors">AI Research Intern</span>
+        <span class="paper-venue">august 2018 - present</span>
+        </br>
+        <span class="work-desc">
+        My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris.
+        My work primarily looks at doing this and that at coris.
+        </span>
+      </li>
+      <li>
+        <!--<a class="paper-link" href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a>-->
+        <span class="paper-title">Pune Institute of Computer Technology</span>
+        </br>
+        <span class="paper-authors">AI Research Intern</span>
+        <span class="paper-venue">august 2018 - present</span>
+        </br>
+        <span class="work-desc">
+        My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris.
+        My work primarily looks at doing this and that at coris.
+        </span>
+      </li>
+  </ul>
+
+  </br></br>
+  <header class="about-header">
+  </header>
+ 
+
+  <p class="home-title">
+    academic service
+    </p>
+    </br>
+  
+    <ul class="paper-list">
+      {% assign papers = site.papers | reverse %}
+      {% for paper in papers %}
+      <script> console.log("paper: ") </script>
+        <li>
+          <!--<a class="paper-link" href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a>-->
+          <span class="paper-title">{{ paper.title | escape }}</span>
+          </br>
+          <span class="paper-authors">{{ paper.authors | escape }}</span>
+          <span class="paper-venue">{{ paper.venue | escape }}</span>
+          <a class="paper-pdf-url" href="{{ paper.pub_url | relative_url }}">PDF</a>
+      {% endfor %}
+    </ul>
+
+
+</div>

@@ -1,6 +1,6 @@
 ---
 layout: app
-title: apps
+title: art + archives
 permalink: /apps/
 ---
 

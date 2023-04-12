@@ -1,0 +1,17 @@
+---
+layout: paper
+title:  "Diversifying behaviors for learning in Asymmetric Multiagent Systems"
+venue: "GECCO 2022"
+authors: "G. Dixit, E. Gonzalez, K. Tumer"
+pub_url: "/assets/publications/GECCO22_IM.pdf"
+
+date:   2022-5-5 00:00:00 +0530
+last_edited: 2022-03-07 00:30:00 +0530
+categories: research
+excerpt: "gecco 22"
+
+loadScripts: false
+scripts: []
+---
+
+<iframe width="100%" height="900" src="//jsfiddle.net/gauravdixitv/6sec7njp/embedded/" allowpaymentrequest allowfullscreen="allowfullscreen" frameborder="0"></iframe>

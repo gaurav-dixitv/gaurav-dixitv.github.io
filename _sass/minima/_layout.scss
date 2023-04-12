@@ -396,3 +396,135 @@
    // Positioning context for the mobile navigation icon
   position: relative;
 }
+
+
+
+/**
+ * Papers
+ */
+
+ 
+.paper-header {
+  margin-bottom: $spacing-unit;
+}
+
+.paper-title {
+  @include relative-font-size(1.0);
+  // letter-spacing: -1px;
+  // line-height: 1;
+  font-weight: 450;
+  color: $charcoal-color;
+  @include media-query($on-laptop) {
+    @include relative-font-size(1.25);
+  }
+}
+.paper-link {
+  display: block;
+  @include relative-font-size(1.13);
+}
+
+.paper-list {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    margin-bottom: $spacing-unit / 2;
+  }
+}
+
+.paper-authors {
+  font-size: $meta-font-size;
+  color: $grey-color;
+}
+.paper-venue {
+  font-size: $small-font-size;
+  font-weight: 450;
+  color: $charcoal-color;
+  // color: $grey-color-dark;
+}
+
+.paper-pdf-url {
+  padding: 0% 1% 0% 1%;
+  // display: block;
+  // @include relative-font-size(1.13);
+}
+
+.paper-content {
+  margin-bottom: $spacing-unit;
+
+  h2 {
+    @include relative-font-size(2);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.75);
+    }
+  }
+
+  h3 {
+    @include relative-font-size(1.625);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.375);
+    }
+  }
+
+  h4 {
+    @include relative-font-size(1.15);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.15);
+    }
+  }
+}
+
+.reference-url {
+  padding: 0% 0% 0% 0%;
+  // display: block;
+  // @include relative-font-size(1.13);
+}
+
+
+.home-title {
+  @include relative-font-size(2.0);
+  // letter-spacing: -1px;
+  // line-height: 1;
+  font-weight: 450;
+  color: $charcoal-color;
+  @include media-query($on-laptop) {
+    @include relative-font-size(1.25);
+  }
+}
+
+
+.work-name {
+  @include relative-font-size(1.0);
+  font-weight: 550;
+  color: $text-color;
+  @include media-query($on-laptop) {
+    @include relative-font-size(1.25);
+  }
+}
+
+.work-title {
+  font-size: $small-font-size;
+  font-weight: 450;
+  color: $text-color;
+}
+
+.work-dates {
+  padding: 0% 0% 0% 3%;
+  font-size: $small-med-font-size;
+  color: $grey-color;
+  // color: $grey-color-dark;
+}
+
+.work-desc {
+  // @include relative-font-size(1.0);
+  font-size: $meta-font-size;
+  line-height: 1;
+  margin: 0px;
+  color: gray;
+  @include media-query($on-laptop) {
+    @include relative-font-size(0.75);
+  }
+}

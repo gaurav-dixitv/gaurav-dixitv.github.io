@@ -4,7 +4,51 @@ layout: default
 
 <div class="home">
   
+<div class="wrapper">
+    <div class="footer-col-wrapper">
+        <div class="about-col about-col-2">
+            <p>I am a PHD candidate <a class="reference-url" href="/assets">[1]</a></p>
+        </div>
+        <div class="about-col about-col-1">
+            <img src="/assets/images/profile_transparent.png">
+        </div>
+    </div>
+</div>
+
+</br></br>
+<header class="about-header">
+</header>
+
   {{ content }}
+
+  <p class="home-title">
+  selected publications
+  </p>
+  </br>
+
+  <ul class="paper-list">
+    {% assign papers = site.papers | reverse %}
+    {% for paper in papers %}
+    <script> console.log("paper: ") </script>
+      <li>
+        <!--<a class="paper-link" href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a>-->
+        <span class="paper-title">{{ paper.title | escape }}</span>
+        </br>
+        <span class="paper-authors">{{ paper.authors | escape }}</span>
+        <span class="paper-venue">{{ paper.venue | escape }}</span>
+        <a class="paper-pdf-url" href="{{ paper.pub_url | relative_url }}">PDF</a>
+    {% endfor %}
+  </ul>
+
+  </br></br>
+  <header class="about-header">
+  </header>
+ 
+  <!---
+  <p class="home-title">
+    experience
+  </p>
+  </br>
 
   <ul class="post-list">
     {% for post in site.posts %}
@@ -19,7 +63,10 @@ layout: default
       </li>
     {% endfor %}
   </ul>
+  -->
 
+  <!--
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  //-->
 
 </div>
