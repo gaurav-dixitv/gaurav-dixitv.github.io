@@ -1,7 +1,7 @@
 ---
 title:  "Weather"
 excerpt: "
-Weather is a visually stunning, sleek and modern weather app with reliable nowcasting. Weather makes extensive use of custom written QML components to achieve a fluid look with native experience. </br>
+Weather is a visually stunning, sleek and modern weather app with reliable nowcasting. Weather makes extensive use of custom written QML components to achieve a fluid look with native experience. <br/>
 Weather was released by CreativeCode, which is a team of a graphic designer and I, working together to create pixel perfect and intelligent apps."
 date: 2016-9-8
 

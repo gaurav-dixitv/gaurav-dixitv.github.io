@@ -1,7 +1,8 @@
 ---
 layout: paper
 title:  "Learning Synergies for Multi-Objective Optimization in Asymmetric Multiagent Systems"
-venue: "GECCO 2023"
+venue:  "In Proceedings of the Genetic and Evolutionary Computation Conference" #"GECCO 2023"
+venue_short: "(GECCO). 2023."
 authors: "G. Dixit, K. Tumer"
 pub_url: "/assets/publications/GECCO23_MOAIM.pdf"
 
@@ -13,5 +14,3 @@ excerpt: "gecco 23"
 loadScripts: false
 scripts: []
 ---
-
-<iframe width="100%" height="900" src="//jsfiddle.net/gauravdixitv/6sec7njp/embedded/" allowpaymentrequest allowfullscreen="allowfullscreen" frameborder="0"></iframe>

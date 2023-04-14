@@ -15,7 +15,7 @@ layout: default
     </div>
 </div>
 
-</br></br>
+<br/><br/>
 <header class="about-header">
 </header>
 
@@ -24,23 +24,25 @@ layout: default
   <p class="home-title">
   selected publications
   </p>
-  </br>
+  <br/>
 
   <ul class="paper-list">
     {% assign papers = site.papers | reverse %}
     {% for paper in papers %}
-    <script> console.log("paper: ") </script>
       <li>
         <!--<a class="paper-link" href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a>-->
         <span class="paper-title">{{ paper.title | escape }}</span>
-        </br>
-        <span class="paper-authors">{{ paper.authors | escape }}</span>
+        <br/>
         <span class="paper-venue">{{ paper.venue | escape }}</span>
-        <a class="paper-pdf-url" href="{{ paper.pub_url | relative_url }}">PDF</a>
+        <span class="paper-venue-short">{{ paper.venue_short | escape }}</span>
+        <br/>
+        <span class="paper-authors">{{ paper.authors | escape }}</span>
+        <a class="paper-pdf-url" href="{{ paper.pub_url | relative_url }}">[ pdf ]</a>
+      </li>
     {% endfor %}
   </ul>
 
-  </br></br>
+  <br/><br/><br/>
   <header class="about-header">
   </header>
  
@@ -48,7 +50,7 @@ layout: default
   <p class="home-title">
     experience
   </p>
-  </br>
+  <br/>
 
   <ul class="post-list">
     {% for post in site.posts %}

@@ -1,7 +1,8 @@
 ---
 layout: paper
 title:  "Learning Inter-Agent Synergies in Asymmetric Multiagent Systems"
-venue: "AAMAS 2023"
+venue: "Proceedings of the 22nd International Conference on Autonomous Agents and MultiAgent Systems"
+venue_short: "(AAMAS). 2023."
 authors: "G. Dixit, K. Tumer"
 pub_url: "/assets/publications/AAMAS23_AIM.pdf"
 
@@ -13,5 +14,3 @@ excerpt: "aamas 23"
 loadScripts: false
 scripts: []
 ---
-
-<iframe width="100%" height="900" src="//jsfiddle.net/gauravdixitv/6sec7njp/embedded/" allowpaymentrequest allowfullscreen="allowfullscreen" frameborder="0"></iframe>

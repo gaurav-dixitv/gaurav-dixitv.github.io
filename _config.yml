@@ -34,8 +34,9 @@ theme: minima
 plugins:
   - jekyll-feed
 
-header_pages: 
+header_pages:
   - cv.md
+  - research.md
   - experience.md
   - archive.md
 
@@ -43,6 +44,7 @@ collections:
  apps:
  papers:
  work:
+ research:
 #  foo: bar
   
 

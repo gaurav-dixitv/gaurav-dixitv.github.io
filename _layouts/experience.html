@@ -10,67 +10,55 @@ layout: default
   {{ content }}
 
   <p class="home-title">experience</p>
-  </br>
+  <br/>
 
   <ul class="paper-list">
       <li>
         <!--<a class="paper-link" href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a>-->
         <span class="work-name">Collaborative Robotics and Intelligent Systems (CoRIS) Institute</span>
-        </br>
+        <br/>
         <span class="work-title">Graduate Research Assistant</span>
         <span class="work-dates">august 2018 - present</span>
-        </br>
+        <br/>
         <span class="work-desc">
         My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris.
         My work primarily looks at doing this and that at coris.
         </span>
       </li>
-    </br>
+    <br/>
       <li>
         <!--<a class="paper-link" href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a>-->
         <span class="work-name">Channel 37</span>
-        </br>
+        <br/>
         <span class="work-title">AI Research Intern</span>
-        <span class="work-dates">august 2018 - present</span>
-        </br>
+        <span class="work-dates">july 2022 - september 2022</span>
+        <br/>
         <span class="work-desc">
         My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris.
         My work primarily looks at doing this and that at coris.
         </span>
       </li>
-    </br>
+    <br/>
       <li>
         <!--<a class="paper-link" href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a>-->
-        <span class="paper-title">RedLynx</span>
-        </br>
-        <span class="paper-authors">AI Research Intern</span>
-        <span class="paper-venue">august 2018 - present</span>
-        </br>
+        <span class="work-name">RedLynx</span>
+        <br/>
+        <span class="work-title">AI Research Intern</span>
+        <span class="work-dates">july 2019 - september 2019</span>
+        <br/>
         <span class="work-desc">
         My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris.
         My work primarily looks at doing this and that at coris.
         </span>
       </li>
-    </br>
+    <br/>
       <li>
         <!--<a class="paper-link" href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a>-->
-        <span class="paper-title">Ubisoft</span>
-        </br>
-        <span class="paper-authors">AI Research Intern</span>
-        <span class="paper-venue">august 2018 - present</span>
-        </br>
-        <span class="work-desc">
-        My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris.
-        My work primarily looks at doing this and that at coris.
-        </span>
-      </li>
-      <li>
-        <!--<a class="paper-link" href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a>-->
-        <span class="paper-title">BMC Software</span>
-        </br>
-        <span class="paper-authors">AI Research Intern</span>
-        <span class="paper-venue">august 2018 - present</span>
-        </br>
+        <span class="work-name">Ubisoft Entertainment SA</span>
+        <br/>
+        <span class="work-title">AI & Physics Programmer</span>
+        <span class="work-dates">august 2016 - june 2018</span>
+        <br/>
         <span class="work-desc">
         My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris.
         My work primarily looks at doing this and that at coris.
@@ -78,11 +66,23 @@ layout: default
       </li>
       <li>
         <!--<a class="paper-link" href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a>-->
-        <span class="paper-title">Pune Institute of Computer Technology</span>
-        </br>
-        <span class="paper-authors">AI Research Intern</span>
-        <span class="paper-venue">august 2018 - present</span>
-        </br>
+        <span class="work-name">BMC Software</span>
+        <br/>
+        <span class="work-title">Software Development Research Intern</span>
+        <span class="work-dates">august 2015 - august 2016</span>
+        <br/>
+        <span class="work-desc">
+        My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris.
+        My work primarily looks at doing this and that at coris.
+        </span>
+      </li>
+      <li>
+        <!--<a class="paper-link" href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a>-->
+        <span class="work-name">Pune Institute of Computer Technology</span>
+        <br/>
+        <span class="work-title">Undergraduate Research Assistant</span>
+        <span class="work-dates">october 2014 - august 2016</span>
+        <br/>
         <span class="work-desc">
         My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris. My work primarily looks at doing this and that at coris.
         My work primarily looks at doing this and that at coris.
@@ -90,7 +90,7 @@ layout: default
       </li>
   </ul>
 
-  </br></br>
+  <br/><br/>
   <header class="about-header">
   </header>
  
@@ -98,20 +98,15 @@ layout: default
   <p class="home-title">
     academic service
     </p>
-    </br>
-  
-    <ul class="paper-list">
-      {% assign papers = site.papers | reverse %}
-      {% for paper in papers %}
-      <script> console.log("paper: ") </script>
+    <ul class="service-list">
         <li>
-          <!--<a class="paper-link" href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a>-->
-          <span class="paper-title">{{ paper.title | escape }}</span>
-          </br>
-          <span class="paper-authors">{{ paper.authors | escape }}</span>
-          <span class="paper-venue">{{ paper.venue | escape }}</span>
-          <a class="paper-pdf-url" href="{{ paper.pub_url | relative_url }}">PDF</a>
-      {% endfor %}
+          <span class="service-title">+ PC of 22nd International Conference on Autonomous Agents and Multiagent Systems, AAMAS (ALA) 2023.</span>
+        <li>
+          <span class="service-title">+ Reviewer for the Genetic and Evolutionary Computation Conference, GECCO 2023.</span>
+        <li>
+          <span class="service-title">+ Reviewer for the Genetic and Evolutionary Computation Conference, GECCO 2022.</span>
+        <li>
+          <span class="service-title">+ Reviewer for the 20th International Conference on Autonomous Agents and Multiagent Systems, AAMAS 2021.</span>
     </ul>
 
 

@@ -1,7 +1,8 @@
 ---
 layout: paper
 title:  "Dirichlet-Multinomial Counterfactual Rewards for Heterogeneous Multiagent Systems"
-venue: "MRS 2019"
+venue: "In 2019 International Symposium on Multi-Robot and Multi-Agent Systems"
+venue_short: "(MRS), IEEE. 2019."
 authors: "G. Dixit, N. Zerbel, K. Tumer"
 pub_url: "/assets/publications/MRS19_DMCS.pdf"
 date:   2022-5-5 00:00:00 +0530
@@ -12,5 +13,3 @@ excerpt: "mrs 19"
 loadScripts: false
 scripts: []
 ---
-
-<iframe width="100%" height="900" src="//jsfiddle.net/gauravdixitv/6sec7njp/embedded/" allowpaymentrequest allowfullscreen="allowfullscreen" frameborder="0"></iframe>

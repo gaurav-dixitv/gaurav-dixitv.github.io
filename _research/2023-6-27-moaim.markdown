@@ -1,0 +1,25 @@
+---
+layout: paper
+title:  "Learning Synergies for Multi-Objective Optimization in Asymmetric Multiagent Systems"
+venue:  "In Proceedings of the Genetic and Evolutionary Computation Conference" #"GECCO 2023"
+venue_short: "(GECCO). 2023."
+authors: "G. Dixit, K. Tumer"
+pub_url: "/assets/publications/GECCO23_MOAIM.pdf"
+
+date:   2023-5-5 00:00:00 +0530
+last_edited: 2023-03-07 00:30:00 +0530
+categories: research
+
+introduction: "This work investivagates This work investivagates This work investivagates This work investivagates This work investivagates This work investivagates This work investivagates"
+image: "/assets/research/gecco23_method.png"
+
+excerpt: "Agents in a multiagent system must learn diverse policies that allow them to express complex inter-agent synergies required for teamwork.
+Multiagent Quality-Diversity methods partially address this by transforming the agents' large joint policy space to a tractable sub-space that can produce synergistic agent policies. 
+However, in multi-objective problems with asymmetric agents (agents with different capabilities and objectives), the search for diversity is fundamentally guided by the need to learn a Pareto front of policies that represents diverse trade-offs between agent-specific and team objectives.
+This work introduces Multi-objective Asymmetric Island Model (MAIM), a multi-objective multiagent learning framework for the discovery of generalizable agent synergies and trade-offs via adaptation of population dynamics over a spectrum of tasks.
+The key insight is that the competitive pressure arising from the changing populations on the team tasks forces agents to acquire robust synergies required to balance their individual and team objectives in response to the nature of their teams and task dynamics.
+Results on several variations of a multi-objective habitat problem highlight the potential of MAIM in producing teams with diverse specializations and trade-offs that readily adapt to unseen tasks."
+
+loadScripts: false
+scripts: []
+---

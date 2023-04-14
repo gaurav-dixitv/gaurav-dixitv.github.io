@@ -10,12 +10,12 @@ quote0: " “Best answering machine like app who can manage your calls if you ar
 quote1: " “..Awesome UI, Awesome Features cool to using this answering machine, work perfect on BlackBerry Z10. Thanks dev...”"
 
 feature0Url: "/assets/apps/busyBee/f0.png"
-feature0Desc: "Profiles are custom configurations that can be set for a specific duration or a geofenced area and will handle all calls for that period/area.</br>
-For example, you can create a 'movies' profile that is designed to answer your calls when you enter the theater or when you set it for the duration of the movie.</br></br>
+feature0Desc: "Profiles are custom configurations that can be set for a specific duration or a geofenced area and will handle all calls for that period/area.<br/>
+For example, you can create a 'movies' profile that is designed to answer your calls when you enter the theater or when you set it for the duration of the movie.<br/><br/>
 "
 
 feature1Url: "/assets/apps/busyBee/f1.png"
-feature1Desc: "BusyBee runs as a background service and stays dormant for most of it's running cycle. It registers itself to an inbound call signal emitted by the OS.</br> 
+feature1Desc: "BusyBee runs as a background service and stays dormant for most of it's running cycle. It registers itself to an inbound call signal emitted by the OS.<br/> 
 When a call is inbound, BusyBee wakes up and takes the appropriate action for the call. After the call is managed, it returns back to being dormant. This ensures a very low battery footprint."
 
 feature2Url: "/assets/apps/busyBee/f2.png"

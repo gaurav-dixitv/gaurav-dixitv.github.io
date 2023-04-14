@@ -428,7 +428,7 @@
   list-style: none;
 
   > li {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: $spacing-unit * 0.6;
   }
 }
 
@@ -437,14 +437,20 @@
   color: $grey-color;
 }
 .paper-venue {
+  font-size: $meta-font-size;
+  font-weight: 400;
+  color: $charcoal-color;
+  // color: $grey-color-dark;
+}
+.paper-venue-short {
   font-size: $small-font-size;
   font-weight: 450;
   color: $charcoal-color;
   // color: $grey-color-dark;
 }
-
 .paper-pdf-url {
   padding: 0% 1% 0% 1%;
+  font-size: $meta-font-size;
   // display: block;
   // @include relative-font-size(1.13);
 }
@@ -498,8 +504,8 @@
 
 .work-name {
   @include relative-font-size(1.0);
-  font-weight: 550;
-  color: $text-color;
+  font-weight: 500;
+  color: $charcoal-color;
   @include media-query($on-laptop) {
     @include relative-font-size(1.25);
   }
@@ -508,13 +514,16 @@
 .work-title {
   font-size: $small-font-size;
   font-weight: 450;
-  color: $text-color;
+  color: $grey-color-dark;
 }
 
 .work-dates {
   padding: 0% 0% 0% 3%;
   font-size: $small-med-font-size;
-  color: $grey-color;
+  color: $grey-color-dark;
+  font-weight: 400;
+  // color: $grey-color;
+  float: right;
   // color: $grey-color-dark;
 }
 
@@ -526,5 +535,20 @@
   color: gray;
   @include media-query($on-laptop) {
     @include relative-font-size(0.75);
+  }
+}
+
+.service-title {
+  font-size: $small-font-size;
+  font-weight: 450;
+  color: $grey-color;
+}
+
+.service-list {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    margin-bottom: $spacing-unit * 0.1;
   }
 }

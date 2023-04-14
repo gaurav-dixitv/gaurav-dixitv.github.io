@@ -1,7 +1,8 @@
 ---
 layout: paper
 title:  "Gaussian Processes as Multiagent Reward Models"
-venue: "AAMAS 2020"
+venue: "Proceedings of the 19th International Conference on Autonomous Agents and MultiAgent Systems"
+venue_short: "(AAMAS). 2020."
 authors: "G. Dixit, S. Airiau, K. Tumer"
 pub_url: "/assets/publications/AAMAS20_GP.pdf"
 
@@ -13,5 +14,3 @@ excerpt: "aamas 20"
 loadScripts: false
 scripts: []
 ---
-
-<iframe width="100%" height="900" src="//jsfiddle.net/gauravdixitv/6sec7njp/embedded/" allowpaymentrequest allowfullscreen="allowfullscreen" frameborder="0"></iframe>

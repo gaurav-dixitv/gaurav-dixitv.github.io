@@ -1,7 +1,8 @@
 ---
 layout: paper
 title:  "Balancing Teams with Quality-Diversity for Heterogeneous Multiagent Coordination"
-venue: "AAMAS 2021"
+venue: "In International Conference on Autonomous Agents and MultiAgent Systems"
+venue_short: "(AAMAS). 2022."
 authors: "G. Dixit, K. Tumer"
 pub_url: "/assets/publications/AAMAS21_EvoBehaviors.pdf"
 
@@ -13,5 +14,3 @@ excerpt: "gecco 21"
 loadScripts: false
 scripts: []
 ---
-
-<iframe width="100%" height="900" src="//jsfiddle.net/gauravdixitv/6sec7njp/embedded/" allowpaymentrequest allowfullscreen="allowfullscreen" frameborder="0"></iframe>
