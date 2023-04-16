@@ -565,8 +565,6 @@
   z-index: 0;
 }
 .timeline{
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 15px;
   position: absolute;
 }
 .timeline.counter{
@@ -589,7 +587,7 @@
   box-sizing: border-box;
 }
 .playbutton:hover {
-  background-color: #40404050;
+  // background-color: #40404050;
 }
 .hidden{
   display: none;
@@ -597,11 +595,17 @@
 rect.play-stroke{
   stroke: rosybrown;
 }
+rect.play-stroke:hover{
+  background-color: #40404050;
+}
 rect.pause-stroke{
   stroke: rosybrown;
 }
 rect.pause-fill{
   fill: rosybrown;
+}
+circle.play-stroke{
+  stroke: rosybrown;
 }
 path.play{
   fill: royalblue;
@@ -631,10 +635,12 @@ path.play{
   position: relative;
   justify-content: center;
   align-items: center;
-  padding: 4vh;
+  /*top left-right bottom*/
+  padding: 4vh 0vw 10vh;
 }
 .divider-line{
   border: 1px solid $grey-color-light;
+  opacity: 0.4;
   height: 0px;
   width: 100%;
 }
