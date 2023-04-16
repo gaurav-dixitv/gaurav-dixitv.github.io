@@ -1,16 +1,11 @@
+
+/*
 :root {
-    --pb_h: 20px;
+    --pb_h: 24px;
     --pb_bl: 20px;
     --pb_bt: 10px;
     --pb_bb: 10px;
 }
-
-.colparents{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
-
 
 .playbutton {
     border: 0;
@@ -19,37 +14,39 @@
     width: 0;
     height: var(--pb_h);
     /*border-color: transparent transparent transparent #202020;
-    */
+    * /
     border-color: red black green yellow;
     transition: 10ms all ease;
     cursor: pointer;
     border-style: solid;
-    /* top | right | bottom | left */
+    /* top | right | bottom | left * /
     border-width: var(--pb_bt) 0 var(--pb_bb) var(--pb_bl);
 }
 .playbutton.paused {
     border-style: double;
     border-width: 0px 0 0px var(--pb_bl);
 }
-/*
 .playbutton:hover {
     border-color: transparent transparent transparent #404040;
 }*/
 
 
-.app-col {
-    float: left;
-    margin-bottom: 5px;
-    padding-left: 5px;
+.colparents{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
-.app-col-1 {
-    width: -webkit-calc(45% - (10px / 2));
-    width: calc(45% - (10px / 2));
+
+.playbutton {
 }
-.app-col-2 {
-    width: -webkit-calc(55% - (10px / 2));
-    width: calc(55% - (10px / 2));
+.playbutton:hover {
+    background-color: #40404050;
 }
+
+.hidden{
+    display: none;
+}
+
 
 .waveform{
     width: 100%;
