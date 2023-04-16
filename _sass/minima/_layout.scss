@@ -564,7 +564,6 @@
   padding: 0;
   z-index: 0;
 }
-
 .timeline{
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
@@ -595,6 +594,18 @@
 .hidden{
   display: none;
 }
+rect.play-stroke{
+  stroke: rosybrown;
+}
+rect.pause-stroke{
+  stroke: rosybrown;
+}
+rect.pause-fill{
+  fill: rosybrown;
+}
+path.play{
+  fill: royalblue;
+}
 
 
 .center-in-parent{
@@ -602,7 +613,6 @@
   justify-content: left;
   align-items: center; 
 }
-
 .in-parent{
   display: flex;
   position: relative;
@@ -610,9 +620,14 @@
 .in-parent.justify-center{
   justify-content: center;
 }
+.in-parent.justify-left{
+  justify-content: left;
+}
 .in-parent.align-center{
   align-items: center;
 }
 .in-parent.align-bottom{
   align-items: bottom;
 }
+
+
