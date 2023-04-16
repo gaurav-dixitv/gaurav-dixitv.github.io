@@ -3,8 +3,8 @@
 
 
 <div class="center-in-parent">
-<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 40 40" id='buttonsvg' class="playbutton">      
-    <g id='play_container'>
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 40 40" id='buttonsvg_{{include.id}}' class="playbutton">      
+    <g id='play_container_{{include.id}}'>
       <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect class="play-stroke" x="2" y="2" width="36" height="36" stroke-width="2"></rect>
         <!--<circle cx="20" cy="20" r="15" stroke="red" stroke-width="2"></circle>-->
@@ -13,7 +13,7 @@
         <path class="play" d="M11 9 L11 31 L31 20 Z"></path>
       </svg>
     </g>
-    <g id='pause_container' class='hidden'>
+    <g id='pause_container_{{include.id}}' class='hidden'>
       <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect class="pause-stroke" x="2" y="2" width="36" height="36" stroke-width="2"></rect>
         <rect class="pause-fill" x="14" y="11" width="4" height="18"></rect>
@@ -26,17 +26,18 @@
 
 
 <div class="in-parent justify-center align-center">
-    <span id="counter" class="timeline counter"></span>
-    <div id="waveform" class="waveform"></div>
-    <span id="duration" class="timeline duration"></span>
+    <span id="counter_{{include.id}}" class="timeline counter"></span>
+    <div id="waveform_{{include.id}}" class="waveform"></div>
+    <span id="duration_{{include.id}}" class="timeline duration"></span>
 </div>
     
 source is: {{include.asource}}
 
 
 <script>
-    var wavesurfer = WaveSurfer.create({
-        container: '#waveform',
+    {
+    let wavesurfer = WaveSurfer.create({
+        container: '#waveform_{{include.id}}',
         waveColor: '#828282',
         progressColor: '#333333',
         /*bisque*/
@@ -53,46 +54,31 @@ source is: {{include.asource}}
         hideScrollbar: true,
         responsive: true
     });
+    wavesurfer.load("{{include.asource}}");
 
-    var formatTime = function (time) {
+    let formatTime = function (time) {
         return [
             Math.floor((time % 3600) / 60), // minutes
             ('00' + Math.floor(time % 60)).slice(-2) // seconds
         ].join(':');
     };
-
-    // Show current time
     wavesurfer.on('audioprocess', function () {
-        document.getElementById("counter").innerText = formatTime(wavesurfer.getCurrentTime());
+        document.querySelector("#counter_{{include.id}}").innerText = formatTime(wavesurfer.getCurrentTime());
     });
-
-    // Show clip duration
     wavesurfer.on('ready', function () {
-        document.getElementById("duration").innerText = formatTime(wavesurfer.getDuration());
+        document.querySelector("#duration_{{include.id}}").innerText = formatTime(wavesurfer.getDuration());
     });
-
-    function toggle_svg(svg){
-        if (svg.style.display == "none"){
-            svg.style.display = "block";
-        }
-        else svg.style.display = "none";
-    }
-
-    wavesurfer.load("{{include.asource}}");
-
-    console.log(document.querySelector('wave').style);
 
     // https://jsfiddle.net/cx9zwkrh/
-    let button = document.querySelector('#buttonsvg');
-    let play = document.querySelector('#play_container');
-    let pause =  document.querySelector('#pause_container');
+    let button = document.querySelector('#buttonsvg_{{include.id}}');
+    let play = document.querySelector('#play_container_{{include.id}}');
+    let pause =  document.querySelector('#pause_container_{{include.id}}');
     button.addEventListener('click', function() {
-        console.log("clicked")
         play.classList.toggle("hidden");
         pause.classList.toggle("hidden");
         wavesurfer.playPause();
         return false;
     });
-
+}
 
 </script>
