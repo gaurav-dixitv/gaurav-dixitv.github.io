@@ -6,16 +6,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 40 40" id='buttonsvg' class="playbutton">      
     <g id='play_container'>
       <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect class="play" x="10" y="10" width="20" height="20" stroke-width="2"></rect>
+        <rect class="play-stroke" x="2" y="2" width="36" height="36" stroke-width="2"></rect>
         <!--<circle cx="20" cy="20" r="15" stroke="red" stroke-width="2"></circle>-->
-        <path class="play" d="M16 14L27.25 20L16 26L16 14Z" c"></path>
+        <!--<path class="play" d="M16 14L27.25 20L16 26L16 14Z" c"></path> -->
+        <!-- <path class="play" d="M14 13 L14 27 L27 20 Z" c"></path> -->
+        <path class="play" d="M11 9 L11 31 L31 20 Z"></path>
       </svg>
     </g>
     <g id='pause_container' class='hidden'>
       <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect class="pause-stroke" x="10" y="10" width="20" height="20" stroke-width="2"></rect>
-        <rect class="pause-fill" x="15" y="14" width="3" height="12"></rect>
-        <rect class="pause-fill" x="22" y="14" width="3" height="12"></rect>
+        <rect class="pause-stroke" x="2" y="2" width="36" height="36" stroke-width="2"></rect>
+        <rect class="pause-fill" x="14" y="11" width="4" height="18"></rect>
+        <rect class="pause-fill" x="22" y="11" width="4" height="18"></rect>
       </svg>
     </g>
 </svg>
@@ -35,12 +37,11 @@ source is: {{include.asource}}
 <script>
     var wavesurfer = WaveSurfer.create({
         container: '#waveform',
-        /*waveColor: '#828282',
+        waveColor: '#828282',
         progressColor: '#333333',
-        bisque
-        */
-        waveColor: 'red',
-        progressColor: 'blue',
+        /*bisque*/
+        waveColor: 'rosybrown',
+        progressColor: 'royalblue',
         // cursorColor: 'transparent',
         cursorWidth: 0 ,
         barWidth: 2,
