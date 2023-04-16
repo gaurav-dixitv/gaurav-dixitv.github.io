@@ -608,11 +608,6 @@ path.play{
 }
 
 
-.center-in-parent{
-  display: flex;
-  justify-content: left;
-  align-items: center; 
-}
 .in-parent{
   display: flex;
   position: relative;
@@ -630,4 +625,23 @@ path.play{
   align-items: bottom;
 }
 
+
+.divider{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 4vh;
+}
+.divider-line{
+  border: 1px solid $grey-color-light;
+  height: 0px;
+  width: 100%;
+}
+//.dividerline{
+  // min-height: $spacing-unit * 1.865;
+   // Positioning context for the mobile navigation icon
+  // position: relative;
+  // align-items: center;
+//}
 
