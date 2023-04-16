@@ -1,43 +1,42 @@
 
+rect.play{
+    stroke: rosybrown;
+}
+rect.pause-stroke{
+    stroke: rosybrown;
+}
+rect.pause-fill{
+    fill: rosybrown;
+}
+path.play{
+    fill: royalblue;
+}
 /*
-:root {
-    --pb_h: 24px;
-    --pb_bl: 20px;
-    --pb_bt: 10px;
-    --pb_bb: 10px;
-}
-
-.playbutton {
-    border: 0;
-    background: transparent;
-    box-sizing: border-box;
-    width: 0;
-    height: var(--pb_h);
-    /*border-color: transparent transparent transparent #202020;
-    * /
-    border-color: red black green yellow;
-    transition: 10ms all ease;
-    cursor: pointer;
-    border-style: solid;
-    /* top | right | bottom | left * /
-    border-width: var(--pb_bt) 0 var(--pb_bb) var(--pb_bl);
-}
-.playbutton.paused {
-    border-style: double;
-    border-width: 0px 0 0px var(--pb_bl);
-}
-.playbutton:hover {
-    border-color: transparent transparent transparent #404040;
-}*/
-
-
-.colparents{
+.center-in-parent{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center; 
 }
 
+.in-parent{
+    display: flex;
+    position: relative;
+}
+.in-parent.justify-center{
+    justify-content: center;
+}
+.in-parent.align-center{
+    align-items: center;
+}
+.in-parent.align-bottom{
+    align-items: bottom;
+}
+*/
+
+/*
 .playbutton {
+    border: 0;
+    box-sizing: border-box;
 }
 .playbutton:hover {
     background-color: #40404050;
@@ -47,30 +46,32 @@
     display: none;
 }
 
-
 .waveform{
     width: 100%;
+    padding: 0;
     z-index: 0;
 }
+
 
 .timeline{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 15px;
+    position: absolute;
 }
 .timeline.counter{
-    position: absolute;
     left: 5px;
-
+    bottom: 0px;
 
     z-index: 1;
 }
 .timeline.duration{
-    position: absolute;
     right: 5px;
-    font-size: 15px;
+    bottom: 0px;
 
     z-index: 1;
 }
+*/
+
 /*
 .row {
     display: flex;

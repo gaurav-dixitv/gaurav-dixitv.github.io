@@ -553,3 +553,66 @@
     margin-bottom: $spacing-unit * 0.1;
   }
 }
+
+
+/* 
+*  audio widget
+*/
+
+.waveform{
+  width: 100%;
+  padding: 0;
+  z-index: 0;
+}
+
+.timeline{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  position: absolute;
+}
+.timeline.counter{
+  left: 5px;
+  bottom: 0px;
+
+  z-index: 1;
+}
+.timeline.duration{
+  right: 5px;
+  bottom: 0px;
+
+  z-index: 1;
+}
+
+
+
+.playbutton {
+  border: 0;
+  box-sizing: border-box;
+}
+.playbutton:hover {
+  background-color: #40404050;
+}
+.hidden{
+  display: none;
+}
+
+
+.center-in-parent{
+  display: flex;
+  justify-content: left;
+  align-items: center; 
+}
+
+.in-parent{
+  display: flex;
+  position: relative;
+}
+.in-parent.justify-center{
+  justify-content: center;
+}
+.in-parent.align-center{
+  align-items: center;
+}
+.in-parent.align-bottom{
+  align-items: bottom;
+}
