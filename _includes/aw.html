@@ -1,0 +1,79 @@
+
+<LINK type="text/css" href="/assets/widgets/audio_player/css/style.css" rel="stylesheet"/>
+
+<div class="row"> 
+    <div class="column left" style="background-color: aliceblue;">
+        <button class='playbutton' id='but'></button>
+    </div>
+    <div class="column right" style="background-color: bisque;">
+        <span id="counter" class="timeline counter"></span>
+        <div id="waveform" class="waveform" style="background-color: blueviolet";></div>
+        <span id="duration" class="timeline duration"></span>
+    </div>
+</div>
+source is: {{include.asource}}
+
+<script>
+    var wavesurfer = WaveSurfer.create({
+        container: '#waveform',
+        /*waveColor: '#828282',
+        progressColor: '#333333',
+        */
+        waveColor: 'red',
+        progressColor: 'blue',
+        // cursorColor: 'transparent',
+        cursorWidth: 0 ,
+        barWidth: 1,
+        barHeight: 1, // the height of the wave
+        barGap: null,
+        height:100,
+        
+        plugins: [
+            WaveSurfer.cursor.create({
+                showTime: true,
+                opacity: 1.0,
+                hideOnBlur: true,
+                width:'0px',
+                customShowTimeStyle: {
+                    'background-color': '#333333',
+                    color: '#828282',
+                    hideOnBlur:true,
+                    padding: '2px',
+                    'font-size': '10px'
+                }
+            })
+        ]
+    });
+
+    var formatTime = function (time) {
+        return [
+            Math.floor((time % 3600) / 60), // minutes
+            ('00' + Math.floor(time % 60)).slice(-2) // seconds
+        ].join(':');
+    };
+
+    // Show current time
+    wavesurfer.on('audioprocess', function () {
+        document.getElementById("counter").innerText = formatTime(wavesurfer.getCurrentTime());
+    });
+
+    // Show clip duration
+    wavesurfer.on('ready', function () {
+        document.getElementById("duration").innerText = formatTime(wavesurfer.getDuration());
+    });
+
+    wavesurfer.load("{{include.asource}}");
+    //wavesurfer.play();
+    /*wavesurfer.on('ready', function () {
+            wavesurfer.play();
+    });*/
+
+    var btn = document.querySelector("button.playbutton")
+    btn.addEventListener('click', function() {
+        console.log("clicked")
+        btn.classList.toggle("paused");
+        wavesurfer.playPause();
+        return false;
+    });
+
+</script>

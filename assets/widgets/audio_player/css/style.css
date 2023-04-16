@@ -1,19 +1,111 @@
-.button {
+:root {
+    --pb_h: 20px;
+    --pb_bl: 20px;
+    --pb_bt: 10px;
+    --pb_bb: 10px;
+}
+
+.colparents{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+.playbutton {
+    border: 0;
     background: transparent;
     box-sizing: border-box;
-   /* width: 0;
-   */
-    height: 74px;
-    border-color: transparent transparent transparent #202020;
-    transition: 100ms all ease;
+    width: 0;
+    height: var(--pb_h);
+    /*border-color: transparent transparent transparent #202020;
+    */
+    border-color: red black green yellow;
+    transition: 10ms all ease;
     cursor: pointer;
     border-style: solid;
-    border-width: 37px 0 37px 60px;
+    /* top | right | bottom | left */
+    border-width: var(--pb_bt) 0 var(--pb_bb) var(--pb_bl);
 }
-.button.paused {
+.playbutton.paused {
     border-style: double;
-    border-width: 0px 0 0px 60px;
+    border-width: 0px 0 0px var(--pb_bl);
 }
-.button:hover {
+/*
+.playbutton:hover {
     border-color: transparent transparent transparent #404040;
+}*/
+
+
+.app-col {
+    float: left;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+.app-col-1 {
+    width: -webkit-calc(45% - (10px / 2));
+    width: calc(45% - (10px / 2));
+}
+.app-col-2 {
+    width: -webkit-calc(55% - (10px / 2));
+    width: calc(55% - (10px / 2));
+}
+
+.waveform{
+    width: 100%;
+    z-index: 0;
+}
+
+.timeline{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+.timeline.counter{
+    position: absolute;
+    left: 5px;
+
+
+    z-index: 1;
+}
+.timeline.duration{
+    position: absolute;
+    right: 5px;
+    font-size: 15px;
+
+    z-index: 1;
+}
+/*
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 50%;
+}
+*/
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  /*float: left;
+  padding: 10px;
+  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.left {
+  width: 5%;
+}
+.right {
+  width: 95%;
+}
+.row {
+    display: flex;
+  }
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
