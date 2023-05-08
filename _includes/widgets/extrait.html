@@ -45,36 +45,37 @@
             // cursorColor: 'transparent',
             cursorWidth: 0,
             barWidth: 2,
-            barHeight: 2, // the height of the wave
+            barHeight: 1.2, // the height of the wave
             barGap: null,
             height: 80,
             fillParent: true,
             scrollParent: false,
             hideScrollbar: true,
             responsive: true,
-            plugins: [
-                WaveSurfer.regions.create({
-                    regionsMinLength: 2,
-                    regions: [
-                        {
-                            start: 0,
-                            end: 16,
-                            loop: false,
-                            drag: false,
-                            resize: false,
-                            color: 'rgba(180, 180, 180, 0.2)'
-                        }, {
-                            start: 17,
-                            end: 43,
-                            loop: false,
-                            drag: false,
-                            resize: false,
-                            color: 'rgba(10, 10, 10, 0.1)'
-                        }
-                    ],
-                })
-            ]
+            plugins: [WaveSurfer.regions.create({})]
         });
+
+        if ('{{include.regions}}') {
+            // first extrait has regions to highlight cantus firmus and the generated counterpoints.
+            let regions = [[0, 16], [17, 44], [44.5, 74]]
+            let colors = [
+                'rgba(180, 180, 180, 0.1)',
+                'rgba(100, 100, 180, 0.1)',
+                'rgba(100, 140, 140, 0.1)'
+            ];
+            for (let i = 0; i < regions.length; ++i) {
+                wavesurfer.addRegion({
+                    start: regions[i][0],
+                    end: regions[i][1],
+                    loop: false,
+                    drag: false,
+                    resize: false,
+                    color: colors[i]
+                });
+            }
+        }
+
+        // wavesurfer.backend.ac.resume();
         wavesurfer.load("{{include.asource}}");
 
         let formatTime = function (time) {
@@ -106,9 +107,6 @@
             pause.classList.add("hidden");
         });
 
-        if ("{{include.sections}}") {
-
-        }
     }
 
 </script>
