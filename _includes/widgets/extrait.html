@@ -5,7 +5,7 @@
             <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <!--<rect class="play-stroke" x="2" y="2" width="36" height="36" stroke-width="2"></rect>-->
                 <circle class="play-stroke" cx="20" cy="20" r="15" stroke-width="3"></circle>
-                <path class="play" d="M16 14L27.25 20L16 26L16 14Z" c"></path>
+                <path class="play-fill" d="M16 14L27.25 20L16 26L16 14Z" c"></path>
                 <!-- <path class="play" d="M14 13 L14 27 L27 20 Z" c"></path> -->
                 <!-- <path class="play" d="M11 9 L11 31 L31 20 Z"></path> -->
             </svg>
@@ -41,7 +41,7 @@
             progressColor: '#333333',
             /*bisque*/
             waveColor: 'rosybrown',
-            progressColor: 'royalblue',
+            progressColor: '#108383',
             // cursorColor: 'transparent',
             cursorWidth: 0,
             barWidth: 2,
@@ -51,7 +51,29 @@
             fillParent: true,
             scrollParent: false,
             hideScrollbar: true,
-            responsive: true
+            responsive: true,
+            plugins: [
+                WaveSurfer.regions.create({
+                    regionsMinLength: 2,
+                    regions: [
+                        {
+                            start: 0,
+                            end: 16,
+                            loop: false,
+                            drag: false,
+                            resize: false,
+                            color: 'rgba(180, 180, 180, 0.2)'
+                        }, {
+                            start: 17,
+                            end: 43,
+                            loop: false,
+                            drag: false,
+                            resize: false,
+                            color: 'rgba(10, 10, 10, 0.1)'
+                        }
+                    ],
+                })
+            ]
         });
         wavesurfer.load("{{include.asource}}");
 
@@ -72,12 +94,21 @@
         let button = document.querySelector('#buttonsvg_{{include.id}}');
         let play = document.querySelector('#play_container_{{include.id}}');
         let pause = document.querySelector('#pause_container_{{include.id}}');
+
         button.addEventListener('click', function () {
             play.classList.toggle("hidden");
             pause.classList.toggle("hidden");
             wavesurfer.playPause();
             return false;
         });
+        wavesurfer.on('finish', function () {
+            play.classList.remove("hidden");
+            pause.classList.add("hidden");
+        });
+
+        if ("{{include.sections}}") {
+
+        }
     }
 
 </script>

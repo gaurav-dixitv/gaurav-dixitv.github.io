@@ -38,7 +38,7 @@ header_pages:
   - cv.md
   - research.md
   - experience.md
-  - archive.md
+  - sounds.md
 
 collections:
  apps:

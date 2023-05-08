@@ -586,31 +586,37 @@
   border: 0;
   box-sizing: border-box;
 }
-.playbutton:hover {
-  // background-color: #40404050;
-}
 .hidden{
   display: none;
 }
+
+
 rect.play-stroke{
   stroke: rosybrown;
 }
-rect.play-stroke:hover{
-  background-color: #40404050;
+path.play-fill{
+  fill: rosybrown;
+  transition: all ease 0.4s;
 }
 rect.pause-stroke{
   stroke: rosybrown;
 }
 rect.pause-fill{
   fill: rosybrown;
+  transition: all ease 0.4s;
 }
 circle.play-stroke{
   stroke: rosybrown;
 }
-path.play{
-  fill: royalblue;
-}
 
+.playbutton:hover path.play-fill{
+  fill: $brand-color;
+  transition: all ease 0.3s;
+}
+.playbutton:hover rect.pause-fill{
+  fill: $brand-color;
+  transition: all ease 0.2s;
+}
 
 .in-parent{
   display: flex;

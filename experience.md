@@ -1,5 +1,5 @@
 ---
 layout: experience
-title: work
+title: experience
 permalink: /experience/
 ---
