@@ -501,7 +501,11 @@
     @include relative-font-size(1.25);
   }
 }
-
+.home-desc {
+  font-size: $small-font-size;
+  font-weight: 500;
+  color: $charcoal-color;
+}
 
 .work-name {
   @include relative-font-size(1.0);
@@ -514,8 +518,18 @@
 
 .work-title {
   font-size: $small-font-size;
-  font-weight: 450;
+  font-weight: 525;
   color: $grey-color-dark;
+}
+.work-right-subtitle {
+  padding: 0% 0% 0% 4%;
+  // @include relative-font-size(0.7);
+  font-size: $meta-font-size;
+  font-weight: 300;
+  color: $charcoal-color;
+  @include media-query($on-laptop) {
+    @include relative-font-size(0.6);
+  }
 }
 .work-dates {
   padding: 0% 0% 0% 3%;
@@ -665,7 +679,7 @@ circle.play-stroke{
   justify-content: center;
   align-items: center;
   /*top left-right bottom*/
-  padding: 4vh 0vw 10vh;
+  padding: 5vh 0vw 5vh;
 }
 .divider-line{
   border: 1px solid $grey-color-light;
