@@ -58,10 +58,13 @@
         if ('{{include.regions}}') {
             // first extrait has regions to highlight cantus firmus and the generated counterpoints.
             let regions = [[0, 16], [17, 44], [44.5, 74]]
+            let labels = ['I', 'II', 'III']
             let colors = [
                 'rgba(180, 180, 180, 0.1)',
-                'rgba(100, 100, 180, 0.1)',
-                'rgba(100, 140, 140, 0.1)'
+                'rgba(180, 180, 180, 0.1)',
+                'rgba(180, 180, 180, 0.1)',
+                // 'rgba(100, 100, 180, 0.1)',
+                //'rgba(100, 140, 140, 0.1)'
             ];
             for (let i = 0; i < regions.length; ++i) {
                 wavesurfer.addRegion({
@@ -70,7 +73,10 @@
                     loop: false,
                     drag: false,
                     resize: false,
-                    color: colors[i]
+                    color: colors[i],
+                    attributes: {
+                        label: labels[i]
+                    }
                 });
             }
         }

@@ -517,7 +517,6 @@
   font-weight: 450;
   color: $grey-color-dark;
 }
-
 .work-dates {
   padding: 0% 0% 0% 3%;
   font-size: $small-med-font-size;
@@ -544,7 +543,19 @@
   font-weight: 450;
   color: $grey-color;
 }
-
+.service-name {
+  font-size: $small-font-size;
+  font-weight: 450;
+  color: $grey-color;
+}
+.service-sub-title {
+  @include relative-font-size(1.1);
+  font-weight: 500;
+  color: $charcoal-color;
+  @include media-query($on-laptop) {
+    @include relative-font-size(0.9);
+  }
+}
 .service-list {
   margin-left: 0;
   list-style: none;
@@ -580,6 +591,16 @@
   z-index: 1;
 }
 
+region.wavesurfer-region:before {
+  content: attr(data-region-label);
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
 
 
 .playbutton {
@@ -632,9 +653,11 @@ circle.play-stroke{
   align-items: center;
 }
 .in-parent.align-bottom{
-  align-items: bottom;
+  align-items: end;
 }
-
+.in-parent.align-top{
+  align-items: start;
+}
 
 .divider{
   display: flex;
@@ -657,3 +680,44 @@ circle.play-stroke{
   // align-items: center;
 //}
 
+
+.listen-section-header {
+  @include relative-font-size(2.0);
+  font-weight: 500;
+  color: $charcoal-color;
+  @include media-query($on-laptop) {
+    @include relative-font-size(1.35);
+  }
+}
+
+.listen-title {
+  @include relative-font-size(1.2);
+  font-weight: 500;
+  color: $charcoal-color;
+  @include media-query($on-laptop) {
+    @include relative-font-size(1.05);
+  }
+}
+
+.listen-date {
+  padding: 0% 0% 0% 1%;
+  @include relative-font-size(0.7);
+  font-weight: 600;
+  color: $charcoal-color;
+  @include media-query($on-laptop) {
+    @include relative-font-size(0.6);
+  }
+}
+
+.listen-desc {
+  font-size: $small-font-size;
+  font-weight: 500;
+  color: $charcoal-color;
+}
+
+.listen-caption {
+  font-size: $meta-font-size;
+  font-weight: 400;
+  color: $charcoal-color;
+  // color: $grey-color-dark;
+}
