@@ -1,0 +1,16 @@
+---
+layout: paper
+title:  "Objective-Informed Diversity for Multi-Objective Multiagent Coordination"
+venue:  "In the European Conference on Artificial Intelligence"
+venue_short: "(ECAI). 2024."
+authors: "G. Dixit, K. Tumer"
+pub_url: "/assets/publications/ECAI24_MO_NES.pdf"
+
+date:   2024-10-27 00:00:00 +0530
+last_edited: 2024-10-27 00:30:00 +0530
+categories: research
+excerpt: "ecai 24"
+
+loadScripts: false
+scripts: []
+---

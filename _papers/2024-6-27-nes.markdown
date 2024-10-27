@@ -1,0 +1,16 @@
+---
+layout: paper
+title:  "Informed Diversity Search for Learning in Asymmetric Multiagent Systems"
+venue:  "In Proceedings of the Genetic and Evolutionary Computation Conference" #"GECCO 2023"
+venue_short: "(GECCO). 2024."
+authors: "G. Dixit, K. Tumer"
+pub_url: "/assets/publications/GECCO24_NES_AIM.pdf"
+
+date:   2024-6-27 00:00:00 +0530
+last_edited: 2024-6-27 00:30:00 +0530
+categories: research
+excerpt: "gecco 24"
+
+loadScripts: false
+scripts: []
+---
