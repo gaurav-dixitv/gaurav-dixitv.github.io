@@ -1,34 +1,31 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"tumer":
+  - firstname: ["Kagan", "K."]
+    url: https://engineering.oregonstate.edu/people/kagan-tumer
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"wong":
+  - firstname: ["Weng-Keen", "W. K.", "Weng Keen"]
+    url: https://engineering.oregonstate.edu/people/weng-keen-wong
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"airiau":
+  - firstname: ["Stephane", "S."]
+    url: https://www.lamsade.dauphine.fr/~airiau/
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"gonzalez":
+  - firstname: ["Everardo"]
+    url: https://everardog.github.io/about
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"nickelson":
+  - firstname: ["Anna"]
+    url: https://techcongress.io/anna-nickelson
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"festa":
+  - firstname: ["Andrew"]
+    url: https://www.linkedin.com/in/andrew-festa
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"thakar":
+  - firstname: ["Raghav"]
+    url: https://raghavthakar.com/
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
-
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"iyer":
+  - firstname: ["Siddarth"]
+    url: https://siddiyer.github.io/
