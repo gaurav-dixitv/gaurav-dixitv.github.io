@@ -26,6 +26,10 @@ latest_posts:
   enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
+
+scholar:
+  sort_by: year
+  order: descending
 ---
 
 I am a postdoctoral researcher at the [AI-Caring Institute](https://ai-caring.org/) and the [Collaborative Robotics and Intelligent Systems (CoRIS) Institute](https://engineering.oregonstate.edu/research/CoRIS) at [Oregon State University](https://engineering.oregonstate.edu/academics/programs/robotics). I completed my PhD at the [ Autonomous Agents and Distributed Intelligence Lab](https://web.engr.oregonstate.edu/~ktumer/) with [Dr. Kagan Tumer](https://web.engr.oregonstate.edu/~ktumer/), where I developed learning and diversity-search techniques for cooperative multi-agent settings.

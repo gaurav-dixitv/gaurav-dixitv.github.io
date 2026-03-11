@@ -113,14 +113,30 @@ progress::-moz-progress-bar {
 }
 
 // Themes transition
-
+/* GD
 html.transition,
 html.transition *,
 html.transition *:before,
 html.transition *:after {
   transition: all 750ms !important;
   transition-delay: 0 !important;
+} GD */
+// GD
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  // Before: transition: all 750ms !important;
+  // After: restrict to color properties only
+  transition: background-color 750ms,
+              color 750ms,
+              border-color 750ms,
+              fill 750ms,
+              stroke 750ms,
+              opacity 750ms !important;
+  transition-delay: 0 !important;
 }
+// GD
 
 // Copy button
 
