@@ -1,7 +1,7 @@
 ---
 layout: cv
 permalink: /cv/
-title: CV [ pdf ]
+title: CV
 permalink: /assets/pdf/Gaurav Dixit - CV.pdf
 nav: true
 nav_order: 3

@@ -35,12 +35,37 @@
 .course-title {
   margin-top: 0;
   margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.2;
 }
 
-.course-meta {
-  font-size: 0.9rem;
-  color: var(--global-text-color-light);
+.course-submeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  align-items: center;
   margin-bottom: 10px;
+}
+
+.course-submeta span {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+  background: var(--global-muted-bg, transparent);
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.course-location {
+  font-weight: 600;
+}
+
+.course-type {
+  font-style: italic;
+}
+
+.course-role {
+  opacity: 0.9;
 }
 
 .course-term,
