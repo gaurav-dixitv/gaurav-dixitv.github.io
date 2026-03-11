@@ -1,31 +1,31 @@
-"tumer":
-  - firstname: ["Kagan", "K."]
-    url: https://engineering.oregonstate.edu/people/kagan-tumer
+# tumer":
+#   - firstname: ["Kagan", "K."]
+#     url: https://engineering.oregonstate.edu/people/kagan-tumer
 
-"wong":
-  - firstname: ["Weng-Keen", "W. K.", "Weng Keen"]
-    url: https://engineering.oregonstate.edu/people/weng-keen-wong
+# "wong":
+#   - firstname: ["Weng-Keen", "W. K.", "Weng Keen"]
+#     url: https://engineering.oregonstate.edu/people/weng-keen-wong
 
-"airiau":
-  - firstname: ["Stephane", "S."]
-    url: https://www.lamsade.dauphine.fr/~airiau/
+# "airiau":
+#   - firstname: ["Stephane", "S."]
+#     url: https://www.lamsade.dauphine.fr/~airiau/
 
-"gonzalez":
-  - firstname: ["Everardo"]
-    url: https://everardog.github.io/about
+# "gonzalez":
+#   - firstname: ["Everardo"]
+#     url: https://everardog.github.io/about
 
-"nickelson":
-  - firstname: ["Anna"]
-    url: https://techcongress.io/anna-nickelson
+# "nickelson":
+#   - firstname: ["Anna"]
+#     url: https://techcongress.io/anna-nickelson
 
-"festa":
-  - firstname: ["Andrew"]
-    url: https://www.linkedin.com/in/andrew-festa
+# "festa":
+#   - firstname: ["Andrew"]
+#     url: https://www.linkedin.com/in/andrew-festa
 
-"thakar":
-  - firstname: ["Raghav"]
-    url: https://raghavthakar.com/
+# "thakar":
+#   - firstname: ["Raghav"]
+#     url: https://raghavthakar.com/
 
-"iyer":
-  - firstname: ["Siddarth"]
-    url: https://siddiyer.github.io/
+# "iyer":
+#   - firstname: ["Siddarth"]
+#     url: https://siddiyer.github.io/

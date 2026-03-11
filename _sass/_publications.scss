@@ -68,7 +68,11 @@
       }
 
       .title {
-        font-weight: bolder;
+        font-weight: bold !important;
+      }
+      
+      ol.bibliography li .title {
+        font-weight: bold !important;
       }
 
       .author {
@@ -116,6 +120,16 @@
         a.award.btn {
           background-color: var(--greenblue-light-color);
           border-color: var(--global-warning-block);
+        }
+
+        a.bib-link {
+          color: var(--global-theme-color);
+          margin-right: 1rem;
+          
+          &:hover {
+            color: var(--global-hover-color);
+            text-decoration: underline;
+          }
         }
       }
 

@@ -37,5 +37,3 @@ At the [AI-Caring Institute](https://ai-caring.org/), my work synthesizes multi-
 [Email](mailto:dixitg@oregonstate.edu) / [Google Scholar](https://scholar.google.com/citations?user=1sh3qCAAAAAJ&hl=en&oi=ao)
 
 ---
-
-<br><br>
