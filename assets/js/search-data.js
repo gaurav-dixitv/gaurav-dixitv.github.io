@@ -18,13 +18,13 @@ ninja.data = [{
           },
         },{id: "nav-teaching",
           title: "Teaching",
-          description: "Course materials, schedules, and resources for classes taught.",
+          description: "Selected course material and resources for classes taught.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "nav-cv-pdf",
-          title: "CV [ pdf ]",
+        },{id: "nav-cv",
+          title: "CV",
           description: "",
           section: "Navigation",
           handler: () => {
@@ -454,16 +454,21 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
-            },},{id: "teachings-data-science-fundamentals",
-          title: 'Data Science Fundamentals',
-          description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
+            },},{id: "teachings-multi-objective-decision-making-modem",
+          title: 'Multi-Objective Decision Making (MODeM)',
+          description: "A workshop on methods and applications for multi-objective decision making for human-centered autonomy.",
           section: "Teachings",handler: () => {
-              window.location.href = "/teachings/data-science-fundamentals/";
-            },},{id: "teachings-introduction-to-machine-learning",
-          title: 'Introduction to Machine Learning',
-          description: "This course provides an introduction to machine learning concepts, algorithms, and applications. Students will learn about supervised and unsupervised learning, model evaluation, and practical implementations.",
+              window.location.href = "/teaching/ijcai-ecai-modem-workshop/";
+            },},{id: "teachings-multi-objective-multi-agent-learning-evolutionary-and-reinforcement-learning-perspectives",
+          title: 'Multi-Objective Multi-Agent Learning: Evolutionary and Reinforcement Learning Perspectives',
+          description: "A tutorial on foundations, solution concepts, and learning methods for decision-making in multi-objective multi-agent settings.",
           section: "Teachings",handler: () => {
-              window.location.href = "/teachings/introduction-to-machine-learning/";
+              window.location.href = "/teaching/moma-tutorial-ecai-24/";
+            },},{id: "teachings-rob-537-learning-based-control",
+          title: 'ROB 537 Learning-Based Control',
+          description: "",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teaching/rob-537-guest-lecture/";
             },},{
         id: 'social-cv',
         title: 'CV',
