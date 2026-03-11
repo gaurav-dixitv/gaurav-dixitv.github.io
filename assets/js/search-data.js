@@ -23,12 +23,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "nav-cv",
-          title: "CV",
+        },{id: "nav-cv-pdf",
+          title: "CV [ pdf ]",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/cv/";
+            window.location.href = "/assets/pdf/Gaurav%20Dixit%20-%20CV.pdf";
           },
         },{id: "post-a-post-with-plotly-js",
         
