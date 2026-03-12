@@ -7,9 +7,9 @@ first_name: Gaurav
 middle_name:
 last_name: Dixit
 contact_note:
-description:
+description: Academic webpage for Gaurav Dixit at Oregon State University and the AI-Caring Institute.
 footer_text: 
-keywords: # add your own keywords or leave empty
+keywords: Robotics, Multiagent, Multi-Objective, Adaptation, AI-Caring # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: image.ico # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
