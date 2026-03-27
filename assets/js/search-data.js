@@ -28,7 +28,7 @@ ninja.data = [{
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/assets/pdf/Gaurav%20Dixit%20-%20CV.pdf";
+            window.location.href = "/assets/pdf/GauravDixitCV.pdf";
           },
         },{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
