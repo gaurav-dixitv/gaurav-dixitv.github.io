@@ -2,7 +2,7 @@
 layout: cv
 permalink: /cv/
 title: CV
-permalink: /assets/pdf/Gaurav Dixit - CV.pdf
+permalink: /assets/pdf/GauravDixitCV.pdf
 nav: true
 nav_order: 3
 cv_pdf: /assets/pdf/example_pdf.pdf # you can also use external links here
